@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Mulish:wght@200;400;600;700&family=Poppins:wght@400;700&family=Roboto+Mono&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(35, 37, 74);
+}
+
+#navContainer {
+  background-color: rgb(56, 59, 105);
+  height: 75px;
+
+  position: relative;
+}
+
+#searchbar {
+  height: 45px;
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  border-radius: 25px;
+  border: 2.5px solid rgb(35, 37, 74);
+  transform: translateY(-50%);
+  background-color: rgb(56, 59, 105);
+  padding-left: 12.5px;
+  color: white;
+  font-size: 16px;
+}
+
+#searchbar:focus {
+  background-color: rgb(35, 37, 74);
+  font-size: 16px;
+  color: white;
+}
+
+#searchbar::placeholder {
+  position: absolute;
+  top: 50%;
+  left: 7.5%;
+  transform: translateY(-50%);
+  font-family: "Poppins", sans-serif;
+  color: rgb(115, 120, 197);
+  font-size: 16px;
+}
+
+#movieContainer {
+  margin: 20px;
+  display: grid;
+  gap: 30px;
+
+  grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+  height: 100%;
+}
+
+#firstMovieContainer,
+#secondMovieContainer,
+#thirdMovieContainer,
+#fourthMovieContainer,
+#fifthMovieContainer,
+#sixthMovieContainer,
+#seventhMovieContainer,
+#eightMovieContainer,
+#ninthMovieContainer,
+#tenthMovieContainer,
+#MovieContainer11,
+#MovieContainer12,
+#MovieContainer13,
+#MovieContainer14,
+#MovieContainer15,
+#MovieContainer16,
+#MovieContainer17,
+#MovieContainer18,
+#MovieContainer19,
+#MovieContainer20 {
+  width: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+#movieImg1,
+#movieImg2,
+#movieImg3,
+#movieImg4,
+#movieImg5,
+#movieImg6,
+#movieImg7,
+#movieImg8,
+#movieImg9,
+#movieImg10,
+#movieImg11,
+#movieImg12,
+#movieImg13,
+#movieImg14,
+#movieImg15,
+#movieImg16,
+#movieImg17,
+#movieImg18,
+#movieImg19,
+#movieImg20 {
+  width: 300px;
+  display: block;
+}
+
+#descriptionContainer1,
+#descriptionContainer2,
+#descriptionContainer3,
+#descriptionContainer4,
+#descriptionContainer5,
+#descriptionContainer6,
+#descriptionContainer7,
+#descriptionContainer8,
+#descriptionContainer9,
+#descriptionContainer10,
+#descriptionContainer11,
+#descriptionContainer12,
+#descriptionContainer13,
+#descriptionContainer14,
+#descriptionContainer15,
+#descriptionContainer16,
+#descriptionContainer17,
+#descriptionContainer18,
+#descriptionContainer19,
+#descriptionContainer20 {
+  position: relative;
+  width: 100%;
+  height: 75px;
+  background-color: rgb(56, 59, 105);
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  padding: 40px;
+}
+
+#movieTitle,
+#movieTitle2,
+#movieTitle3,
+#movieTitle4,
+#movieTitle5,
+#movieTitle6,
+#movieTitle7,
+#movieTitle8,
+#movieTitle9,
+#movieTitle10,
+#movieTitle11,
+#movieTitle12,
+#movieTitle13,
+#movieTitle14,
+#movieTitle15,
+#movieTitle16,
+#movieTitle17,
+#movieTitle18,
+#movieTitle19,
+#movieTitle20 {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: rgb(238, 238, 238);
+  font-size: 20px;
+  width: 80%;
+}
+
+#movieTitle16 {
+  width: 80%;
+}
+
+#movieRating,
+#movieRating2,
+#movieRating3,
+.movieRating {
+  position: absolute;
+  color: rgb(255, 165, 0);
+  background-color: rgb(35, 37, 74);
+  right: 10px;
+
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+#movieRating2 {
+  width: 30px;
+}
+
+#hoverContainer,
+#hoverContainer2,
+#hoverContainer3,
+.hoverContainer {
+  position: absolute;
+  bottom: 0%;
+  background-color: #ffffff;
+  transform: translateY(100%);
+  /*visibility: hidden;*/
+  max-height: 100%;
+
+  transition: transform 1s ease;
+}
+
+#firstMovieContainer:hover > #hoverContainer,
+#secondMovieContainer:hover > #hoverContainer2,
+#thirdMovieContainer:hover > #hoverContainer3,
+#fourthMovieContainer:hover > #hoverContainer4,
+#fifthMovieContainer:hover > #hoverContainer5,
+#sixthMovieContainer:hover > #hoverContainer6,
+#seventhMovieContainer:hover > #hoverContainer7,
+#eightMovieContainer:hover > #hoverContainer8,
+#ninthMovieContainer:hover > #hoverContainer9,
+#tenthMovieContainer:hover > #hoverContainer10,
+#MovieContainer11:hover > #hoverContainer11,
+#MovieContainer12:hover > #hoverContainer12,
+#MovieContainer13:hover > #hoverContainer13,
+#MovieContainer14:hover > #hoverContainer14,
+#MovieContainer15:hover > #hoverContainer15,
+#MovieContainer16:hover > #hoverContainer16,
+#MovieContainer17:hover > #hoverContainer17,
+#MovieContainer18:hover > #hoverContainer18,
+#MovieContainer19:hover > #hoverContainer19,
+#MovieContainer20:hover > #hoverContainer20 {
+  visibility: visible;
+  transform: translateY(0%);
+  transition: transform 1s ease;
+
+  overflow: hidden;
+}
+
+/*#secondMovieContainer:hover > #hoverContainer2 {
+  visibility: visible;
+  transform: translateY(0%);
+  transition: transform 1s ease;
+}*/
+
+#hoverOverview,
+#hoverOverview2,
+.hoverOverview {
+  background-color: white;
+  padding-left: 30px;
+  font-size: 19px;
+  padding-top: 40px;
+}
+
+#hoverDescription,
+#hoverDescription2,
+.hoverDescription {
+  height: fit-content;
+
+  width: 300px;
+  padding: 30px;
+  background-color: white;
+  font-size: 16px;
+}
